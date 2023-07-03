@@ -1,35 +1,28 @@
-"use strict";
-
-var menuIsOpen = false;
-var navigation = document.querySelector('.beta-nhsuk-navigation');
-var navigationList = document.querySelector('.beta-nhsuk-header__navigation-list');
-var mobileMenu = document.createElement('ul');
-var mobileMenuToggleButton = document.querySelector('.beta-nhsuk-header__menu-toggle');
-var mobileMenuCloseButton = document.createElement('button');
-var mobileMenuContainer = document.querySelector('.beta-mobile-menu-container');
-var breakpoints = [];
-var width = document.body.offsetWidth;
+let menuIsOpen = false;
+const navigation = document.querySelector('.beta-nhsuk-navigation');
+const navigationList = document.querySelector('.beta-nhsuk-header__navigation-list');
+const mobileMenu = document.createElement('ul');
+const mobileMenuToggleButton = document.querySelector('.beta-nhsuk-header__menu-toggle');
+const mobileMenuCloseButton = document.createElement('button');
+const mobileMenuContainer = document.querySelector('.beta-mobile-menu-container');
+const breakpoints = [];
+const width = document.body.offsetWidth;
 
 // Throttle the watcher on resize
-function debounce(func) {
-  var _this = this;
-  var timeout = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 100;
-  var timer;
-  return function () {
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
+function debounce(func, timeout = 100) {
+  let timer;
+  return (...args) => {
     clearTimeout(timer);
-    timer = setTimeout(function () {
-      func.apply(_this, args);
+    timer = setTimeout(() => {
+      func.apply(this, args);
     }, timeout);
   };
 }
 
 // Check break points
 function calculateBreakpoints() {
-  var childrenWidth = 0;
-  for (var i = 0; i < navigationList.children.length; i++) {
+  let childrenWidth = 0;
+  for (let i = 0; i < navigationList.children.length; i++) {
     childrenWidth += navigationList.children[i].offsetWidth;
     breakpoints[i] = childrenWidth;
   }
@@ -69,8 +62,8 @@ function handleEscapeKey(e) {
 function openMobileMenu() {
   menuIsOpen = true;
   mobileMenu.classList.remove('js-hidden');
-  var marginBody = mobileMenu.offsetHeight;
-  navigation.style.marginBottom = "".concat(marginBody, "px");
+  const marginBody = mobileMenu.offsetHeight;
+  navigation.style.marginBottom = `${marginBody}px`;
   mobileMenuToggleButton.setAttribute('aria-expanded', 'true');
 
   // add event listerer for esc key to close menu
@@ -91,8 +84,8 @@ function toggleMobileMenu() {
 
 // Check available screen space
 function updateNavigation() {
-  var availableSpace = navigation.offsetWidth;
-  var itemsVisible = navigationList.children.length;
+  const availableSpace = navigation.offsetWidth;
+  let itemsVisible = navigationList.children.length;
   if (availableSpace < breakpoints[itemsVisible - 1]) {
     mobileMenuToggleButton.classList.add('js-show');
     mobileMenuContainer.classList.add('js-show');
@@ -122,7 +115,7 @@ function updateNavigation() {
 function doOnOrientationChange() {
   switch (window.orientation) {
     case 90:
-      setTimeout(function () {
+      setTimeout(() => {
         calculateBreakpoints();
         updateNavigation();
       }, 200);

@@ -40,9 +40,35 @@
     z-index: 20;
   }
 
+  .app-feedback-banner-v2{
+    background-color: #d8dde0;
+    bottom: 0;
+    box-shadow: 0 -4px 0 0 rgba(33,43,50,.16);
+    display: none;
+    margin: 0 auto;
+    padding-bottom: 0px;
+    padding-top: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+  }
+
+  .app-feedback-banner-v2hide{
+    background-color: #d8dde0;
+    bottom: 0;
+    box-shadow: 0 -4px 0 0 rgba(33,43,50,.16);
+    display: none;
+    margin: 0 auto;
+    padding-bottom: 0px;
+    padding-top: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+  }
+
 .app-feedback-banner__heading{
-    font-size: 1.7rem;
-    line-height: 1.33333;
+    font-size: 1.2rem;
+    line-height: 1.2;
     margin: 0;
   } 
 
@@ -77,11 +103,9 @@
 
 
 .app-feedback-banner__content::after {
-
     clear: both;
     content: "";
     display: block;
-
 }
 
 .app-feedback-banner__close:hover {
@@ -96,3 +120,71 @@
     outline: 4px solid transparent;
     text-decoration: none;
   }
+
+  .cookie-declaration {
+    font-size: 1rem;
+  }
+
+  .app-feedback-banner__message{
+    font-size: 1rem;
+  }
+
+//Option 1-2 background card colour grey -->
+  .exploration-nhsuk-card-bkrnd-colour {
+    background-color: #d8dde0;
+    border: 1px solid #aeb7bd ;
+  }
+
+
+  .exploration-nhsuk-card__heading--feature-grey {
+    background-color: #4c6272;
+  }
+
+
+  .exploration-nhsuk-card__heading--feature-green {
+    background-color: #4c6272;
+  }
+  
+  .exploration-nhsuk-card__heading--feature-light-yellow {
+    background-color: #fff9c4;
+    border-color: #ffeb3b;
+  }
+
+
+
+// -------------------
+
+  .app-feedback-banner__close:focus {
+    background-color: #ffeb3b;
+  }
+
+// Version 3-2 button padding
+
+  #app-feedback-banner-close {
+    display: block;
+    margin-right: 60px;
+  }
+
+
+// Version 3.4 button 
+
+#app-feedback-banner-close {
+  display: block;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+  .feedback-option4-heading {
+    display: block;
+    margin-right: 30px;
+  }
+
+  .feedback3-4-background-blue {
+    background-color: #fff9c4;
+    box-shadow: 0 -4px 0 0 #ffeb3b;
+  }
+
+  //.nhsuk-card__heading--feature{
+   // background-color: #007f3b;
+
+  //}

@@ -1,5 +1,3 @@
-"use strict";
-
 /* PrismJS 1.15.0
 https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript */
 var _self = "undefined" != typeof window ? window : "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? self : {},
@@ -10,18 +8,18 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
         manual: _self.Prism && _self.Prism.manual,
         disableWorkerMessageHandler: _self.Prism && _self.Prism.disableWorkerMessageHandler,
         util: {
-          encode: function encode(e) {
+          encode: function (e) {
             return e instanceof a ? new a(e.type, n.util.encode(e.content), e.alias) : "Array" === n.util.type(e) ? e.map(n.util.encode) : e.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/\u00a0/g, " ");
           },
-          type: function type(e) {
+          type: function (e) {
             return Object.prototype.toString.call(e).slice(8, -1);
           },
-          objId: function objId(e) {
+          objId: function (e) {
             return e.__id || Object.defineProperty(e, "__id", {
               value: ++t
             }), e.__id;
           },
-          clone: function clone(e, t) {
+          clone: function (e, t) {
             var a = n.util.type(e);
             switch (t = t || {}, a) {
               case "Object":
@@ -41,12 +39,12 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
           }
         },
         languages: {
-          extend: function extend(e, t) {
+          extend: function (e, t) {
             var a = n.util.clone(n.languages[e]);
             for (var r in t) a[r] = t[r];
             return a;
           },
-          insertBefore: function insertBefore(e, t, a, r) {
+          insertBefore: function (e, t, a, r) {
             r = r || n.languages;
             var l = r[e],
               i = {};
@@ -59,16 +57,16 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
               n === u && t != e && (this[t] = i);
             }), i;
           },
-          DFS: function DFS(e, t, a, r) {
+          DFS: function (e, t, a, r) {
             r = r || {};
             for (var l in e) e.hasOwnProperty(l) && (t.call(e, l, e[l], a || l), "Object" !== n.util.type(e[l]) || r[n.util.objId(e[l])] ? "Array" !== n.util.type(e[l]) || r[n.util.objId(e[l])] || (r[n.util.objId(e[l])] = !0, n.languages.DFS(e[l], t, l, r)) : (r[n.util.objId(e[l])] = !0, n.languages.DFS(e[l], t, null, r)));
           }
         },
         plugins: {},
-        highlightAll: function highlightAll(e, t) {
+        highlightAll: function (e, t) {
           n.highlightAllUnder(document, e, t);
         },
-        highlightAllUnder: function highlightAllUnder(e, t, a) {
+        highlightAllUnder: function (e, t, a) {
           var r = {
             callback: a,
             selector: 'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'
@@ -76,7 +74,7 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
           n.hooks.run("before-highlightall", r);
           for (var l, i = r.elements || e.querySelectorAll(r.selector), o = 0; l = i[o++];) n.highlightElement(l, t === !0, r.callback);
         },
-        highlightElement: function highlightElement(t, a, r) {
+        highlightElement: function (t, a, r) {
           for (var l, i, o = t; o && !e.test(o.className);) o = o.parentNode;
           o && (l = (o.className.match(e) || [, ""])[1].toLowerCase(), i = n.languages[l]), t.className = t.className.replace(e, "").replace(/\s+/g, " ") + " language-" + l, t.parentNode && (o = t.parentNode, /pre/i.test(o.nodeName) && (o.className = o.className.replace(e, "").replace(/\s+/g, " ") + " language-" + l));
           var s = t.textContent,
@@ -98,7 +96,7 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
             }));
           } else u.highlightedCode = n.highlight(u.code, u.grammar, u.language), n.hooks.run("before-insert", u), u.element.innerHTML = u.highlightedCode, n.hooks.run("after-highlight", u), n.hooks.run("complete", u), r && r.call(t);
         },
-        highlight: function highlight(e, t, r) {
+        highlight: function (e, t, r) {
           var l = {
             code: e,
             grammar: t,
@@ -106,7 +104,7 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
           };
           return n.hooks.run("before-tokenize", l), l.tokens = n.tokenize(l.code, l.grammar), n.hooks.run("after-tokenize", l), a.stringify(n.util.encode(l.tokens), l.language);
         },
-        matchGrammar: function matchGrammar(e, t, a, r, l, i, o) {
+        matchGrammar: function (e, t, a, r, l, i, o) {
           var s = n.Token;
           for (var u in a) if (a.hasOwnProperty(u) && a[u]) {
             if (u == o) return;
@@ -157,7 +155,7 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
             }
           }
         },
-        tokenize: function tokenize(e, t) {
+        tokenize: function (e, t) {
           var a = [e],
             r = t.rest;
           if (r) {
@@ -168,11 +166,11 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
         },
         hooks: {
           all: {},
-          add: function add(e, t) {
+          add: function (e, t) {
             var a = n.hooks.all;
             a[e] = a[e] || [], a[e].push(t);
           },
-          run: function run(e, t) {
+          run: function (e, t) {
             var a = n.hooks.all[e];
             if (a && a.length) for (var r, l = 0; r = a[l++];) r(t);
           }
