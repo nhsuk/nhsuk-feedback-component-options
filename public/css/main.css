@@ -7501,7 +7501,7 @@ b {
   font-size: 1rem;
 }
 
-.exploration-nhsuk-card-bkrnd-colour {
+.exploration-nhsuk-card-bkrnd-colour-light-grey {
   background-color: #d8dde0;
   border: 1px solid #aeb7bd;
 }
@@ -7514,7 +7514,7 @@ b {
   background-color: #4c6272;
 }
 
-.exploration-nhsuk-card__heading--feature-light-yellow {
+.exploration-nhsuk-card-bkrnd-colour-light-yellow {
   background-color: #fff9c4;
   border-color: #ffeb3b;
 }

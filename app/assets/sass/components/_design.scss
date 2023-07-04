@@ -129,27 +129,26 @@
     font-size: 1rem;
   }
 
-//Option 1-2 background card colour grey -->
-  .exploration-nhsuk-card-bkrnd-colour {
+//Exploration - Card background colour -->
+  .exploration-nhsuk-card-bkrnd-colour-light-grey {
     background-color: #d8dde0;
     border: 1px solid #aeb7bd ;
   }
 
+  .exploration-nhsuk-card-bkrnd-colour-light-yellow {
+    background-color: #fff9c4;
+    border: 1px solid #ffeb3b;
+  }
+
+
+  .feedback3-background-yellow {
+    background-color: #fff9c4;
+    box-shadow: 0 -4px 0 0 #ffeb3b;
+  }
 
   .exploration-nhsuk-card__heading--feature-grey {
     background-color: #4c6272;
   }
-
-
-  .exploration-nhsuk-card__heading--feature-green {
-    background-color: #4c6272;
-  }
-  
-  .exploration-nhsuk-card__heading--feature-light-yellow {
-    background-color: #fff9c4;
-    border-color: #ffeb3b;
-  }
-
 
 
 // -------------------
@@ -157,6 +156,7 @@
   .app-feedback-banner__close:focus {
     background-color: #ffeb3b;
   }
+
 
 // Version 3-2 button padding
 
@@ -166,7 +166,7 @@
   }
 
 
-// Version 3.4 button 
+// Version 3.3 button 
 
 #app-feedback-banner-close {
   display: block;
@@ -179,10 +179,7 @@
     margin-right: 30px;
   }
 
-  .feedback3-4-background-blue {
-    background-color: #fff9c4;
-    box-shadow: 0 -4px 0 0 #ffeb3b;
-  }
+
 
   //.nhsuk-card__heading--feature{
    // background-color: #007f3b;
