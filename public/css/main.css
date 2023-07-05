@@ -7506,17 +7506,18 @@ b {
   border: 1px solid #aeb7bd;
 }
 
-.exploration-nhsuk-card__heading--feature-grey {
-  background-color: #4c6272;
-}
-
-.exploration-nhsuk-card__heading--feature-green {
-  background-color: #4c6272;
-}
-
 .exploration-nhsuk-card-bkrnd-colour-light-yellow {
   background-color: #fff9c4;
-  border-color: #ffeb3b;
+  border: 1px solid #ffeb3b;
+}
+
+.feedback3-background-yellow {
+  background-color: #fff9c4;
+  box-shadow: 0 -4px 0 0 #ffeb3b;
+}
+
+.exploration-nhsuk-card__heading--feature-grey {
+  background-color: #4c6272;
 }
 
 .app-feedback-banner__close:focus {
@@ -7537,11 +7538,6 @@ b {
 .feedback-option4-heading {
   display: block;
   margin-right: 30px;
-}
-
-.feedback3-4-background-blue {
-  background-color: #fff9c4;
-  box-shadow: 0 -4px 0 0 #ffeb3b;
 }
 
 /**

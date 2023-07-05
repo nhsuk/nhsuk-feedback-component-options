@@ -306,39 +306,25 @@
           <div class="nhsuk-grid-column-full">
 
             <div class="app-feedback-banner__content">
-            <h2 class="app-feedback-banner__heading">Help improve the NHS website</h2>
-            <p class="app-feedback-banner__message nhsuk-u-margin-bottom-2"><a href="https://feedback.digital.nhs.uk/jfe/form/SV_29PaYXCp2nOKBbU" id="AgreeButton" target="_blank">Take our survey (opens new page)</a></p>
-            <p class="nhsuk-u-margin-bottom-3 space-bottom cookie-declaration">We'll use a cookie to save your choice.</p>
+            <h2 class="app-feedback-banner__heading  nhsuk-u-margin-bottom-4">Help improve the NHS website</h2>
+
+            <div id="hideFooterContent">
+              <p class="app-feedback-banner__message nhsuk-u-margin-bottom-2"><a href="https://feedback.digital.nhs.uk/jfe/form/SV_29PaYXCp2nOKBbU" id="AgreeButton" target="_blank">Take our survey (opens new page)</a></p>
+              <p class="nhsuk-u-margin-bottom-3 space-bottom cookie-declaration">We'll use a cookie to save your choice.</p>           
+            </div>
+
             <button class="app-feedback-banner__close" id="app-feedback-banner-close" type="button">Close<span 
               class="nhsuk-u-visually-hidden"> feedback invite</span></button>
-              <button class="app-feedback-banner__close" id="HideButton" type="button">Hide<span 
+              <button class="app-feedback-banner__close" id="HideButton" onclick="hideContent()" type="button">Hide<span 
                 class="nhsuk-u-visually-hidden"> feedback invite</span></button>
             </div>
+          
 
           </div>
         </div>
       </div>      
       
 
- <!--
-      <div class="app-feedback-banner-v2" id="app-feedback-banner-v2hidden" style="display: block;" class="survey-bottom">
-        <div class="nhsuk-width-container">
-          <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-full">
-  
-              <div class="app-feedback-banner__content">
-              <h2 class="app-feedback-banner__heading">Help improve the NHS website</h2>
-              <button class="app-feedback-banner__close" id="app-feedback-banner-close" type="button">Open<span 
-                class="nhsuk-u-visually-hidden"> feedback invite</span></button>
-                <button class="app-feedback-banner__close" id="HideButton" type="button">Hide<span 
-                  class="nhsuk-u-visually-hidden"> feedback invite</span></button>
-              </div>
-              <br>
-  
-            </div>
-          </div>
-        </div>
-    -->
 
 
 
@@ -347,26 +333,26 @@
       <script type="text/javascript">
 
         document.getElementById("app-feedback-banner-v2").style.display = "none";
-        //document.getElementById("app-feedback-banner-v2hidden").style.display = "none";
-
-
-        document.getElementById("HideButton").onclick = function() {
-          document.getElementById("app-feedback-banner-v2").style.display = "none";
-          //document.getElementById("app-feedback-banner-v2hidden").style.display = "block";
-        }
 
         document.getElementById("app-feedback-banner-close").onclick = function() {
           document.getElementById("app-feedback-banner-v2").style.display = "none";
-          //document.getElementById("app-feedback-banner-v2hidden").style.display = "none";
         }
 
         setTimeout(()=> {
           document.getElementById("app-feedback-banner-v2").style.display = "block";
-          //document.getElementById("app-feedback-banner-v2hidden").style.display = "none";
           }
-          ,10000);
+          ,15000);
 
-
+          function hideContent() {
+            var x = document.getElementById("hideFooterContent");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+              HideButton.innerHTML = "Hide";
+            } else {
+              x.style.display = "none";
+              HideButton.innerHTML = "Show";
+            }
+          }
 
       </script>
 
