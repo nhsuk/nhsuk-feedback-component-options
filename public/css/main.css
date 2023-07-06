@@ -7526,13 +7526,46 @@ b {
 
 #app-feedback-banner-close {
   display: block;
-  margin-right: 60px;
+  margin-right: 0px;
 }
 
 #app-feedback-banner-close {
   display: block;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+#floatingButtons {
+  float: right;
+  padding: 0;
+  position: relative;
+  right: 0;
+}
+
+#HideButton {
+  float: right;
+  position: relative;
+  width: auto;
+  margin-right: 20px;
+  margin-bottom: 0.5em;
+}
+
+#app-feedback-banner-close {
+  float: right;
+  position: relative;
+  width: auto;
+}
+
+#footerHeader {
+  float: left;
+  position: relative;
+  min-width: 10em;
+  width: 50%;
+}
+
+#hideFooterContent {
+  clear: both;
+  width: 100%;
 }
 
 /**

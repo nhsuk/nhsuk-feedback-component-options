@@ -151,22 +151,16 @@
   }
 
 
-// -------------------
-
   .app-feedback-banner__close:focus {
     background-color: #ffeb3b;
   }
 
 
-// Version 3-2 button padding
-
   #app-feedback-banner-close {
     display: block;
-    margin-right: 60px;
+    margin-right: 0px;
   }
 
-
-// Version 3.3 button 
 
 #app-feedback-banner-close {
   display: block;
@@ -177,10 +171,40 @@
 }
 
 
+//Floating banner
+#floatingButtons{
+  float: right;
+  padding: 0;
+  position: relative;
+  right: 0;
+}
 
 
 
-  //.nhsuk-card__heading--feature{
-   // background-color: #007f3b;
+#HideButton{
+  float: right;
+  position: relative;
+  width: auto;
+  margin-right: 20px;
+  margin-bottom: 0.5em;
+}
 
-  //}
+#app-feedback-banner-close{
+  float: right;
+  position: relative;
+  width: auto;
+}
+
+
+#footerHeader{
+  float: left;
+  position: relative;
+  min-width: 10em;
+  width: 50%;
+}
+
+
+#hideFooterContent{
+  clear: both;
+  width: 100%
+}
