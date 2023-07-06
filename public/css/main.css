@@ -7464,7 +7464,7 @@ b {
   color: #212b32;
   cursor: pointer;
   padding: 0;
-  position: absolute;
+  position: relative;
   right: 0;
   text-decoration: underline;
   top: 0;
@@ -7531,13 +7531,8 @@ b {
 
 #app-feedback-banner-close {
   display: block;
-  margin-right: 60px;
-  margin-left: 60px;
-}
-
-.feedback-option4-heading {
-  display: block;
-  margin-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /**
