@@ -8159,6 +8159,10 @@ b {
   text-decoration: underline;
 }
 
+.nhsuk-card__heading--feature {
+  font-size: 1.5rem;
+}
+
 .nhsuk-header__search-form {
   background-color: transparent;
   padding: 0;
