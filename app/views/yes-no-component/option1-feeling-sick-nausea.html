@@ -481,7 +481,7 @@
                 </div>
               </div>
   
-              <div id="nhsuk-user-feedback-form-yes" data-enable-text-response="">
+              <div id="nhsuk-user-feedback-form-yes" data-enable-text-response="" role="alert">
                 <div class="nhsuk-user-feedback-form">
                   <div class="nhsuk-card nhsuk-u-reading-width">
                     <div class="nhsuk-card__content">
@@ -491,7 +491,7 @@
                 </div>
               </div>
   
-            <div id="nhsuk-user-feedback-form-no" data-enable-text-response="">
+            <div id="nhsuk-user-feedback-form-no" data-enable-text-response="" role="alert">
               <div class="nhsuk-user-feedback-form">
                 <div class="nhsuk-card nhsuk-u-reading-width">
                   <div class="nhsuk-card__content">
@@ -512,7 +512,7 @@
             </div>
   
   
-            <div id="nhsuk-user-feedback-form-thanks" data-enable-text-response="">
+            <div id="nhsuk-user-feedback-form-thanks" data-enable-text-response="" role="alert">
               <div class="nhsuk-user-feedback-form">
                 <div class="nhsuk-card nhsuk-u-reading-width">
                   <div class="nhsuk-card__content">
@@ -523,38 +523,35 @@
                 </div>
               </div>
             </div>
-
+  
             <script type="text/javascript">
               document.getElementById("nhsuk-user-feedback-form-yes").style.display = "none";
               document.getElementById("nhsuk-user-feedback-form-no").style.display = "none";
               document.getElementById("nhsuk-user-feedback-form-thanks").style.display = "none";
-
-          document.getElementById("yes").onclick = function() {
-              document.getElementById("nhsuk-user-feedback-form-start").style.display = "none";
-              document.getElementById("nhsuk-user-feedback-form-yes").style.display = "block";
-              document.getElementById("nhsuk-user-feedback-form-no").style.display = "none";
-              document.getElementById("nhsuk-user-feedback-form-thanks").style.display = "none";
-          }
-
-          document.getElementById("no").onclick = function() {
-              document.getElementById("nhsuk-user-feedback-form-start").style.display = "none";
-              document.getElementById("nhsuk-user-feedback-form-yes").style.display = "none";
-              document.getElementById("nhsuk-user-feedback-form-no").style.display = "block";
-              document.getElementById("nhsuk-user-feedback-form-thanks").style.display = "none";
-          }
-
-          document.getElementById("submit2").onclick = function() {
-            document.getElementById("nhsuk-user-feedback-form-start").style.display = "none";
-              document.getElementById("nhsuk-user-feedback-form-yes").style.display = "none";
-              document.getElementById("nhsuk-user-feedback-form-no").style.display = "none";
-              document.getElementById("nhsuk-user-feedback-form-thanks").style.display = "block";      
-          }
-
-
-
-        </script>
-
-
+  
+              document.getElementById("yes").onclick = function() {
+                  document.getElementById("nhsuk-user-feedback-form-start").style.display = "none";
+                  document.getElementById("nhsuk-user-feedback-form-yes").style.display = "block";
+                  document.getElementById("nhsuk-user-feedback-form-no").style.display = "none";
+                  document.getElementById("nhsuk-user-feedback-form-thanks").style.display = "none";
+              }
+  
+              document.getElementById("no").onclick = function() {
+                  document.getElementById("nhsuk-user-feedback-form-start").style.display = "none";
+                  document.getElementById("nhsuk-user-feedback-form-yes").style.display = "none";
+                  document.getElementById("nhsuk-user-feedback-form-no").style.display = "block";
+                  document.getElementById("nhsuk-user-feedback-form-thanks").style.display = "none";
+              }
+  
+              document.getElementById("submit2").onclick = function() {
+                  document.getElementById("nhsuk-user-feedback-form-start").style.display = "none";
+                  document.getElementById("nhsuk-user-feedback-form-yes").style.display = "none";
+                  document.getElementById("nhsuk-user-feedback-form-no").style.display = "none";
+                  document.getElementById("nhsuk-user-feedback-form-thanks").style.display = "block";      
+              }
+            </script>
+  
+  
             </section>
 
 

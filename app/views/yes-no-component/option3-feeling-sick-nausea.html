@@ -509,99 +509,97 @@
       </p>
     </div>
     
-    <div id="nhsuk-user-feedback-form-start" data-enable-text-response=""><div class="nhsuk-user-feedback-form"><div class="nhsuk-card nhsuk-u-reading-width">
-      <div class="nhsuk-card__content exploration-nhsuk-card-bkrnd-colour-light-grey">
-        <h2 class="nhsuk-card__heading nhsuk-heading-s">
-          Did this information help you?
-        </h2>
+    <section>
+      <div id="nhsuk-user-feedback-form-start" data-enable-text-response="">
+        <div class="nhsuk-user-feedback-form">
+          <div class="nhsuk-card nhsuk-u-reading-width">
+            <div class="nhsuk-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-s">Did this information help you?</h2>
+              <div>
+                <button class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-right-4 nhsuk-u-margin-bottom-0 nhsuk-user-feedback-form--yes" id="yes">
+                  Yes <span class="nhsuk-u-visually-hidden">this information helped me</span> 
+                </button>
+                <button class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-bottom-0 nhsuk-user-feedback-form--no" id="no">
+                  No <span class="nhsuk-u-visually-hidden">this information did not help me</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <div>
-          <button class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-right-4 nhsuk-u-margin-bottom-0 nhsuk-user-feedback-form--yes" id="yes">
-            Yes <span class="nhsuk-u-visually-hidden">this information helped me</span> 
-          </button>
-          <button class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-bottom-0 nhsuk-user-feedback-form--no" id="no">
-            No <span class="nhsuk-u-visually-hidden">this information did not help me</span>
-          </button>
-         </div>
+      <div id="nhsuk-user-feedback-form-yes" data-enable-text-response="" role="alert">
+        <div class="nhsuk-user-feedback-form">
+          <div class="nhsuk-card nhsuk-u-reading-width">
+            <div class="nhsuk-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-s">Thank you, we have saved your feedback</h2>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-
+    <div id="nhsuk-user-feedback-form-no" data-enable-text-response="" role="alert">
+      <div class="nhsuk-user-feedback-form">
+        <div class="nhsuk-card nhsuk-u-reading-width">
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-s">Why was it not helpful? (optional)</h2>
+            <hr class="nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4" aria-hidden="true">
+            <div class="nhsuk-form-group">
+              <span class="nhsuk-hint nhsuk-u-margin-bottom-4" id="more-detail-hint">
+                Do not include personal information.
+              </span>
+              <textarea class="nhsuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+            </div>
+            <button id="submit2" class="nhsuk-button nhsuk-button--secondary nhsuk-user-feedback-form--submit" type="submit">
+              Submit
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    </div></div>
 
-    <div id="nhsuk-user-feedback-form-yes" data-enable-text-response=""><div class="nhsuk-user-feedback-form"><div class="nhsuk-card nhsuk-u-reading-width">
-      <div class="nhsuk-card__content exploration-nhsuk-card-bkrnd-colour-light-grey">
-        <h2 class="nhsuk-card__heading nhsuk-heading-s">
-          Thank you, we have saved your feedback
-        </h2>
-      
+
+    <div id="nhsuk-user-feedback-form-thanks" data-enable-text-response="" role="alert">
+      <div class="nhsuk-user-feedback-form">
+        <div class="nhsuk-card nhsuk-u-reading-width">
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-user-feedback-form-header nhsuk-heading-s" tabindex="-1">Thank you for your feedback.</h2>
+              <p>We do not check feedback every day and cannot respond to comments.</p>
+            <p>Find out how to <a href="#">contact the NHS</a> if you need to speak to someone.</p>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
-  </div>
 
-  <div id="nhsuk-user-feedback-form-no" data-enable-text-response=""><div class="nhsuk-user-feedback-form"><div class="nhsuk-card nhsuk-u-reading-width">
-    <div class="nhsuk-card__content exploration-nhsuk-card-bkrnd-colour-light-grey">
-      <h2 class="nhsuk-card__heading nhsuk-heading-s">
-        Why was it not helpful? (optional)
-      </h2>
-      <div class="nhsuk-form-group">
-        <span class="nhsuk-hint nhsuk-u-margin-bottom-4" id="more-detail-hint">
-          Do not include personal information.
-        </span>
-        <textarea class="nhsuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
-      </div>
-      <button id="submit2" class="nhsuk-button nhsuk-button--secondary nhsuk-user-feedback-form--submit" type="submit">
-        Submit
-      </button>
-    </div>
-  </div>
-  </div>
-</div>
-
-
-  <div id="nhsuk-user-feedback-form-thanks" data-enable-text-response=""><div class="nhsuk-user-feedback-form"><div class="nhsuk-card nhsuk-u-reading-width">
-    <div class="nhsuk-card__content exploration-nhsuk-card-bkrnd-colour-light-grey">
-      <h2 class="nhsuk-card__heading nhsuk-user-feedback-form-header nhsuk-heading-s" tabindex="-1">
-        Thank you for your feedback.
-      </h2>
-        <p>We do not check feedback every day and cannot respond to comments.</p>
-      <p>Find out how to <a href="/contact-us/">contact the NHS</a> if you need to speak to someone.</p>
-    </div>
-  </div>
-  </div>
-</div>
-
-<script type="text/javascript">
+    <script type="text/javascript">
       document.getElementById("nhsuk-user-feedback-form-yes").style.display = "none";
       document.getElementById("nhsuk-user-feedback-form-no").style.display = "none";
       document.getElementById("nhsuk-user-feedback-form-thanks").style.display = "none";
 
-  document.getElementById("yes").onclick = function() {
-      document.getElementById("nhsuk-user-feedback-form-start").style.display = "none";
-      document.getElementById("nhsuk-user-feedback-form-yes").style.display = "block";
-      document.getElementById("nhsuk-user-feedback-form-no").style.display = "none";
-      document.getElementById("nhsuk-user-feedback-form-thanks").style.display = "none";
-  }
+      document.getElementById("yes").onclick = function() {
+          document.getElementById("nhsuk-user-feedback-form-start").style.display = "none";
+          document.getElementById("nhsuk-user-feedback-form-yes").style.display = "block";
+          document.getElementById("nhsuk-user-feedback-form-no").style.display = "none";
+          document.getElementById("nhsuk-user-feedback-form-thanks").style.display = "none";
+      }
 
-  document.getElementById("no").onclick = function() {
-      document.getElementById("nhsuk-user-feedback-form-start").style.display = "none";
-      document.getElementById("nhsuk-user-feedback-form-yes").style.display = "none";
-      document.getElementById("nhsuk-user-feedback-form-no").style.display = "block";
-      document.getElementById("nhsuk-user-feedback-form-thanks").style.display = "none";
-  }
+      document.getElementById("no").onclick = function() {
+          document.getElementById("nhsuk-user-feedback-form-start").style.display = "none";
+          document.getElementById("nhsuk-user-feedback-form-yes").style.display = "none";
+          document.getElementById("nhsuk-user-feedback-form-no").style.display = "block";
+          document.getElementById("nhsuk-user-feedback-form-thanks").style.display = "none";
+      }
 
-  document.getElementById("submit2").onclick = function() {
-    document.getElementById("nhsuk-user-feedback-form-start").style.display = "none";
-      document.getElementById("nhsuk-user-feedback-form-yes").style.display = "none";
-      document.getElementById("nhsuk-user-feedback-form-no").style.display = "none";
-      document.getElementById("nhsuk-user-feedback-form-thanks").style.display = "block";      
-  }
+      document.getElementById("submit2").onclick = function() {
+          document.getElementById("nhsuk-user-feedback-form-start").style.display = "none";
+          document.getElementById("nhsuk-user-feedback-form-yes").style.display = "none";
+          document.getElementById("nhsuk-user-feedback-form-no").style.display = "none";
+          document.getElementById("nhsuk-user-feedback-form-thanks").style.display = "block";      
+      }
+    </script>
 
 
-</script>
-    
+    </section>
     
           </div>
     
