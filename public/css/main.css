@@ -7374,10 +7374,6 @@ b {
   }
 }
 
-.nhsuk-card__heading--feature {
-  font-size: 1.5rem;
-}
-
 .nhsuk-breadcrumb {
   background-color: #f0f4f5;
 }
@@ -8161,10 +8157,6 @@ b {
 
 .nhsuk-details__summary-text {
   text-decoration: underline;
-}
-
-.nhsuk-card__heading--feature {
-  font-size: 1.5rem;
 }
 
 .nhsuk-header__search-form {

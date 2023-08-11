@@ -1,0 +1,343 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-1.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-6' %}
+
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Sore throats
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/",
+      text: "Home"
+    }
+  ],
+  href: "https://www.nhs.uk/conditions/",
+  text: "Health A to Z"
+})
+}}
+
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper  nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+  
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1>Red eye</h1>
+      </div>
+    </div>
+
+    <article>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+
+        <section>
+          <p><b>A red eye is usually nothing to worry about and often gets better on its own. But sometimes it can be serious and you'll need to get medical help.</b></p>
+        </section>
+
+        <section>
+
+        <h2 id="causes">Common causes of a red eye</h2>
+
+        <p>Lots of different things can cause a red eye.</p>
+        <p>Your symptoms might give you an idea of what's causing it.</p>
+
+        <div class="nhsuk-table-container">
+          <table><caption class="nhsuk-u-visually-hidden">Common causes of red eyes and related symptoms.</caption>
+          <thead>
+          <tr>
+          <th scope="col">Symptoms</th>
+          <th scope="col">Possible cause</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>Bright red area in the white of your eye</td>
+          <td>Burst blood vessel</td>
+          </tr>
+          <tr>
+          <td>Gritty or burning feeling, sticky eyes</td>
+          <td><a href="#">Conjunctivitis</a></td>
+          </tr>
+          <tr>
+          <td>Sore, blurry or watery eyes</td>
+          <td><a href="#">Dry eyes</a></td>
+          </tr>
+          <tr>
+          <td>Itchy, sore or red eyelids</td>
+          <td><a href="#">Blepharitis</a></td>
+          </tr>
+          <tr>
+          <td>Feels like there's something in your eye</td>
+          <td>Ingrowing eyelash</td>
+          </tr>
+          <tr>
+          <td>Swollen, drooping or twitching eyelid, or a lump on your eyelid</td>
+          <td><a href="#">Eyelid problems</a></td>
+          </tr>
+          </tbody>
+          </table>
+        </div>
+        </section>
+
+        
+
+
+        <section>
+          <h2 id="self-care">What to do if you have a red eye</h2>
+
+          <p>If your eye does not hurt and your sight is not affected, it's probably nothing serious. It may get better on its own in a few days.</p>
+          <p>Until it has got better:</p>
+          <ul>
+            <li>try not to touch or rub your eye</li>
+            <li>do not wear contact lenses</li>
+          </ul>
+          <h2>A pharmacist can help if you have a red eye</h2>
+          <p>You can ask a pharmacist if:</p>
+          <ul>
+            <li>there's anything you can do to treat your eye yourself</li>
+            <li>you can buy anything to help, such as cleaning solutions, eyedrops or medicines</li>
+            <li>you need to see a GP</li>
+          </ul>
+
+          <div class="nhsuk-action-link">
+            <a class="nhsuk-action-link__link" href="#">
+
+            <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="36" width="36">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+            </svg>
+            <span class="nhsuk-action-link__text">Find a pharmacy</span>
+            </a>
+          </div>
+        </section>
+
+
+
+        <section>
+          <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+            <div class="nhsuk-card--care__heading-container">
+            <h2 class="nhsuk-card--care__heading">
+            <span role="text">
+              <span class="nhsuk-u-visually-hidden">Non-urgent advice:  </span>See a GP if:
+            </span>
+            </h2>
+            <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+            </div>
+            <div class="nhsuk-card__content">
+
+            <ul>
+              <li>you have a red eye for more than a few days</li>
+              <li>your child is under 2 years old and has a red eye</li>
+            </ul>
+            <p>If your GP cannot find what's causing your red eye, they may refer you to an eye specialist (ophthalmologist) for tests.</p>
+
+            </div>
+          </div>
+        </section>
+
+
+        <section>
+          <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--urgent">
+            <div class="nhsuk-card--care__heading-container">
+
+            <h2 class="nhsuk-card--care__heading">
+            <span role="text">
+              <span class="nhsuk-u-visually-hidden">Urgent advice: </span>Ask for an urgent GP appointment or get help from NHS 111 if:
+            </span>
+            </h2>
+            <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+            </div>
+            <div class="nhsuk-card__content">
+
+            <ul>
+              <li>your baby has red eyes and they're less than 28 days old</li>
+              <li>your eye is painful and red</li>
+              <li>you have a red eye and wear contact lenses – you could have an eye infection</li>
+            </ul>
+            <p>You can call 111 or <a href="https://111.nhs.uk/">get help from 111 online</a>.</p>
+            
+            </div>
+          </div>
+        </section>
+
+
+
+        <section>
+          <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--emergency">
+            <div class="nhsuk-card--care__heading-container">
+            <h2 class="nhsuk-card--care__heading">
+            <span role="text">
+              <span class="nhsuk-u-visually-hidden">Immediate action required: </span>Call 999 or go to A&amp;E if:
+            </span>
+            </h2>
+            <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+            </div>
+          <div class="nhsuk-card__content">
+
+          <p>You have a red eye and:</p>
+          <ul>
+            <li>you have any changes to your sight, like wavy lines, flashing or loss of vision</li>
+            <li>it hurts to look at light</li>
+            <li>you have a severe headache and feel sick</li>
+            <li>your eye or eyes are very dark red</li>
+            <li>you have injured or pierced your eye</li>
+            <li>1 pupil is bigger than the other</li>
+            <li>something is stuck in your eye (like a piece of glass or grit)</li>
+          </ul>
+
+          
+
+          <div class="nhsuk-action-link">
+
+          <a class="nhsuk-action-link__link" href="https://www.nhs.uk/Service-Search/Accident-and-emergency-services/LocationSearch/428">
+          <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="36" width="36">
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+          </svg>
+          <span class="nhsuk-action-link__text">Find your nearest A&amp;E</span>
+          </a>
+          </div>
+
+
+
+          </div>
+          </div>
+        </section>
+
+
+
+
+        <div>
+          <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+          Page last reviewed: 21 March 2022<br>
+          Next review due: 21 March 2025
+          </p>
+        </div>
+
+        
+
+        
+
+
+
+        </div>
+      </div>
+    </article>
+
+  </main>
+</div>
+
+  </div>
+
+
+
+     
+  <div class="app-feedback-banner-v2 exploration-nhsuk-card-bkrnd-colour-light-grey" id="app-feedback-banner-v2" style="display: block;" class="survey-bottom">
+    <div class="nhsuk-width-container">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+
+          <div class="app-feedback-banner__content">
+          
+            <div id="buttonsWithHeading">
+              <div id="floatingButtons">
+                <button class="app-feedback-banner__close" id="app-feedback-banner-close" type="button">Close<span 
+                  class="nhsuk-u-visually-hidden"> feedback invite</span></button>
+                <button class="app-feedback-banner__close" id="HideButton" onclick="hideContent()" type="button">Hide<span 
+                    class="nhsuk-u-visually-hidden"> feedback invite</span></button>
+              </div>
+
+              <h2 id="footerHeader" class="app-feedback-banner__heading nhsuk-u-margin-bottom-4" >Help improve the NHS website</h2>
+           </div>
+
+
+            <div id="hideFooterContent" >
+              <p class="app-feedback-banner__message nhsuk-u-margin-bottom-2"><a href="https://feedback.digital.nhs.uk/jfe/form/SV_29PaYXCp2nOKBbU" id="AgreeButton" target="_blank">Take our survey (opens new page)</a></p>
+              <p class="nhsuk-u-margin-bottom-3 space-bottom cookie-declaration">We'll use a cookie to save your choice.</p>           
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>      
+  </div>     
+      
+
+
+
+
+
+      <script type="text/javascript">
+
+        document.getElementById("app-feedback-banner-v2").style.display = "none";
+
+        document.getElementById("app-feedback-banner-close").onclick = function() {
+          document.getElementById("app-feedback-banner-v2").style.display = "none";
+        }
+
+        setTimeout(()=> {
+          document.getElementById("app-feedback-banner-v2").style.display = "block";
+          }
+          ,15000);
+
+          function hideContent() {
+            var x = document.getElementById("hideFooterContent");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+              HideButton.innerHTML = "Hide";
+            } else {
+              x.style.display = "none";
+              HideButton.innerHTML = "Show";
+            }
+          }
+
+      </script>
+{% endblock %}
+
