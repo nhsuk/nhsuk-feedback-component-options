@@ -22,11 +22,12 @@
         <p>We'd also like to use analytics cookies. These collect feedback and send information about how our site is used to services called Adobe Analytics, Qualtrics Feedback, Microsoft Clarity and Google Analytics. We use this information to improve our site.</p>
         <p>Let us know if this is OK. We'll use a cookie to save your choice. You can <a id="nhsuk-cookie-banner__link" href="/our-policies/cookies-policy/">read more about our cookies</a> before you choose.</p>
         <ul> 
-            <li><button class="nhsuk-button" id="nhsuk-cookie-banner__link_accept_analytics" href="#">I'm OK with analytics cookies</button></li>
-            <li><button class="nhsuk-button" id="nhsuk-cookie-banner__link_accept" href="#">Do not use analytics cookies</button></li>
+            <li><button class="nhsuk-button" id="accept">I'm OK with analytics cookies</button></li>
+            <li><button class="nhsuk-button" id="decline">Do not use analytics cookies</button></li>
         </ul>
     </div>
   </div>
+
 
   <div class="nhsuk-success-banner" id="nhsuk-cookie-confirmation-banner" style="display:none;">
     <div class="nhsuk-width-container">
@@ -34,6 +35,8 @@
     </div>
   </div>
 </div>
+
+
 
 
 {{
@@ -94,9 +97,11 @@
   
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-two-thirds">
-        <h1>Red eye2</h1>
+        <h1>Red eye</h1>
       </div>
     </div>
+
+
 
     <article>
       <div class="nhsuk-grid-row">
@@ -105,6 +110,8 @@
         <section>
           <p><b>A red eye is usually nothing to worry about and often gets better on its own. But sometimes it can be serious and you'll need to get medical help.</b></p>
         </section>
+
+
 
         <section>
 
@@ -331,19 +338,24 @@
               document.getElementById("nhsuk-user-feedback-form-start").style.display = "none";
               document.getElementById("nhsuk-user-feedback-form-yes").style.display = "block";
               document.getElementById("nhsuk-user-feedback-form-no").style.display = "none";
+              document.getElementById("nhsuk-cookie-banner").style.display = "none";
           }
 
           document.getElementById("no").onclick = function() {
               document.getElementById("nhsuk-user-feedback-form-start").style.display = "none";
               document.getElementById("nhsuk-user-feedback-form-yes").style.display = "none";
               document.getElementById("nhsuk-user-feedback-form-no").style.display = "block";
+              document.getElementById("nhsuk-cookie-banner").style.display = "none";
           }
 
-          document.getElementById("submit2").onclick = function() {
-              document.getElementById("nhsuk-user-feedback-form-start").style.display = "none";
-              document.getElementById("nhsuk-user-feedback-form-yes").style.display = "none";
-              document.getElementById("nhsuk-user-feedback-form-no").style.display = "none";
+          document.getElementById("accept").onclick = function() {
+              document.getElementById("nhsuk-cookie-banner").style.display = "none";
           }
+
+          document.getElementById("decline").onclick = function() {
+              document.getElementById("nhsuk-cookie-banner").style.display = "none";
+          }
+
         </script>
 
 
