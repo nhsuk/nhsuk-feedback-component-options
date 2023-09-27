@@ -1,5 +1,5 @@
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'template-2.html' %}
+{% extends 'template-1.html' %}
 {% set mainClasses = 'nhsuk-u-padding-top-6' %}
 
 
@@ -8,9 +8,34 @@
   Red eye
 {% endblock %}
 
+
+
 <!-- Header goes inside the header block -->
 <!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
 {% block header %}
+
+<div id="nhsuk-cookie-banner" data-nosnippet="true">
+  <div class="nhsuk-cookie-banner" id="cookiebanner">
+    <div class="nhsuk-width-container"> 
+        <h2>Cookies on the NHS website</h2> 
+        <p>We've put some small files called cookies on your device to make our site work.</p>
+        <p>We'd also like to use analytics cookies. These collect feedback and send information about how our site is used to services called Adobe Analytics, Qualtrics Feedback, Microsoft Clarity and Google Analytics. We use this information to improve our site.</p>
+        <p>Let us know if this is OK. We'll use a cookie to save your choice. You can <a id="nhsuk-cookie-banner__link" href="/our-policies/cookies-policy/">read more about our cookies</a> before you choose.</p>
+        <ul> 
+            <li><button class="nhsuk-button" id="nhsuk-cookie-banner__link_accept_analytics" href="#">I'm OK with analytics cookies</button></li>
+            <li><button class="nhsuk-button" id="nhsuk-cookie-banner__link_accept" href="#">Do not use analytics cookies</button></li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="nhsuk-success-banner" id="nhsuk-cookie-confirmation-banner" style="display:none;">
+    <div class="nhsuk-width-container">
+      <p id="nhsuk-success-banner__message">You can change your cookie settings at any time using our <a href="/our-policies/cookies-policy/">cookies page</a>.</p>
+    </div>
+  </div>
+</div>
+
+
 {{
  header({
     "showNav": "true",
@@ -59,8 +84,9 @@
   text: "Health A to Z"
 })
 }}
-
 {% endblock %}
+
+
 
 {% block content %}
 <div class="nhsuk-width-container">
@@ -68,7 +94,7 @@
   
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-two-thirds">
-        <h1>Red eye</h1>
+        <h1>Red eye2</h1>
       </div>
     </div>
 

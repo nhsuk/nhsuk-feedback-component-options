@@ -209,3 +209,39 @@
   clear: both;
   width: 100%
 }
+
+//Cookie banner
+#nhsuk-cookie-banner .nhsuk-cookie-banner{
+  background: white;
+  position: relative;
+  box-shadow: 0 0 4px 0 #212b32;
+  padding: 24px 0 19px;
+  width: 100%;
+  z-index: 1;
+}
+
+#nhsuk-cookie-banner ul, #nhsuk-cookie-banner li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nhsuk-cookie-banner li{
+  display: inline;
+  margin-right: 20px;
+}
+
+#nhsuk-cookie-banner h2{
+  font-size: 22px;
+  margin-bottom: 16px;
+  display: block;
+  font-weight: 600;
+  color: #292132;
+  margin-top: 0;
+}
+
+
+
+
+
+
