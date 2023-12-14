@@ -7597,6 +7597,13 @@ b {
   margin-top: 0;
 }
 
+.app-brightcove-video {
+  background-color: #fff;
+  border-bottom: 1px solid #d8dde0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /**
  * Modified of nhsuk-card, these are used an page links
  * to follow the style fo the new proposed IA changes
